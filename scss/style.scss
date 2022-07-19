@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Roboto+Flex:opsz,wght@8..144,500;8..144,600;8..144,700&family=Roboto+Mono:wght@700&family=Roboto:wght@400;500&display=swap');
+@import 'nullstyle';
+
+$maxWidth: 1158;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+[class*="__container"] {
+    max-width: 1158px; // Ширина контейнера в макете + 15px * 2 из padding
+    margin: 0px auto;
+    padding: 0px 15px; // Отступы безопасности для адаптива
+    
+    // Брейпоинты для адаптива
+    /* PC */
+    @media (max-width: 1087px) {
+        max-width: 970px;
+    }
+    /* TABLET */
+    @media (max-width: 992.98px) {
+        max-width: 750px;
+    }
+    /* MOBILE */
+    @media (max-width: 767.98px) {
+        max-width: none;
+    }
+    /* MOBILE */
+    @media (max-width: 479.98px) {
+        max-width: none;
+    }
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+body {
+    background: #F5F5F5;
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+    color: #090909;
+    font-stretch: 151;
+    font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+}
+
+main {
+    // font-family: 'Inter', sans-serif;
+    // font-family: 'Poppins', sans-serif;
+}
