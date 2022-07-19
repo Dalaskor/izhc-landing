@@ -101,3 +101,226 @@ img {
   overflow: hidden;
   flex-direction: column;
 }
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+.header__container {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 108px;
+  height: 32px;
+  transition: 0.4s;
+}
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+.logo__image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.applestore {
+  width: 179px;
+  height: 64px;
+  background: #6A6A6A;
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  transition: 0.4s;
+}
+.applestore:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.applestore_small {
+  width: 80px;
+  height: 40px;
+  background: #6A6A6A;
+  border-radius: 24px;
+}
+.applestore_small .applestore__body {
+  display: none;
+}
+.applestore__body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2px;
+}
+.applestore__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.applestore__install {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2px;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+.applestore__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.googleplay {
+  width: 179px;
+  height: 64px;
+  background: #6A6A6A;
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  transition: 0.4s;
+}
+.googleplay:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.googleplay_small {
+  width: 80px;
+  height: 40px;
+  background: #6A6A6A;
+  border-radius: 24px;
+}
+.googleplay_small .googleplay__body {
+  display: none;
+}
+.googleplay__body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2px;
+}
+.googleplay__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.googleplay__install {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2px;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+.googleplay__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  background: url("./../img/about-block/background.png") no-repeat 50% top;
+  background-size: contain;
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 142px;
+}
+.about__title {
+  max-width: 541px;
+  max-height: 132px;
+}
+.about__links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 61px;
+}
+.about__image {
+  margin-left: 227px;
+}
+.about__nextbtn {
+  position: relative;
+  left: 45%;
+  top: 17%;
+}
+
+.title {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+  color: #090909;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+
+.btnnext {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #090909;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-right: 8px;
+}

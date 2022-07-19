@@ -38,3 +38,465 @@ $maxWidth: 1158;
     overflow: hidden;
     flex-direction: column;
 }
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+    &__container {
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.logo {
+    width: 108px;
+    height: 32px;
+    transition: 0.4s;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.75;
+    }
+    &__image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.applestore {
+    width: 179px;
+    height: 64px;
+    background: #6A6A6A;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    transition: 0.4s;
+
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    &_small {
+        width: 80px;
+        height: 40px;
+        background: #6A6A6A;
+        border-radius: 24px;
+
+        & .applestore__body {
+            display: none;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__install {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2px;
+        font-family: 'Roboto Flex';
+        font-style: normal;
+        font-weight: 550;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.25px;
+        color: #FFFFFF;
+        font-stretch: 151;
+        font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+    }
+
+    &__name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.googleplay {
+    width: 179px;
+    height: 64px;
+    background: #6A6A6A;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    transition: 0.4s;
+
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    &_small {
+        width: 80px;
+        height: 40px;
+        background: #6A6A6A;
+        border-radius: 24px;
+
+        & .googleplay__body {
+            display: none;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__install {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2px;
+        font-family: 'Roboto Flex';
+        font-style: normal;
+        font-weight: 550;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.25px;
+        color: #FFFFFF;
+        font-stretch: 151;
+        font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+    }
+
+    &__name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.main {
+}
+.section {
+}
+.about {
+    background: url('./../img/about-block/background.png') no-repeat 50% top;
+    background-size: contain;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 142px;
+    }
+
+    &__title {
+        max-width: 541px;
+        max-height: 132px;
+        // margin-top: 87px;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-top: 61px;
+    }
+
+    &__link {
+    }
+
+    &__phoneimg {
+    }
+
+    &__image {
+        margin-left: 227px;
+    }
+
+    &__nextbtn {
+        position: relative;
+        left: 45%;
+        top: 17%;
+    }
+}
+.title {
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+    color: #090909;
+    font-stretch: 151;
+    font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+}
+.btnnext {
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #090909;
+    font-stretch: 151;
+    font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-right: 8px;
+}
+.how-work {
+
+    &__container {
+    }
+
+    &__title {
+    }
+
+    &__cards {
+    }
+
+    &__card {
+    }
+
+    &__nextbtn {
+    }
+}
+.card-how {
+
+    &__number {
+    }
+
+    &__description {
+    }
+
+    &__image {
+    }
+}
+.card-house {
+
+    &_small {
+    }
+
+    &__title {
+    }
+
+    &__name {
+    }
+
+    &__project {
+    }
+
+    &__image {
+    }
+}
+.trand {
+
+    &__container {
+    }
+
+    &__title {
+    }
+
+    &__housecards {
+    }
+
+    &__housecard {
+    }
+
+    &__nextbtn {
+    }
+}
+.rating {
+
+    &__container {
+    }
+
+    &__title {
+    }
+
+    &__card {
+    }
+
+    &__nextbtn {
+    }
+}
+.ratings {
+
+    &__cards {
+    }
+}
+.card-rating {
+
+    &__rating {
+    }
+
+    &__stars {
+    }
+
+    &__star {
+    }
+
+    &__number {
+    }
+
+    &__logo {
+    }
+
+    &__image {
+    }
+
+    &__name {
+    }
+}
+.genius {
+
+    &__container {
+    }
+
+    &__card {
+    }
+
+    &__card-title {
+    }
+
+    &__description {
+    }
+
+    &__title {
+    }
+
+    &__nextbtn {
+    }
+}
+.club {
+
+    &__container {
+    }
+
+    &__badge {
+    }
+
+    &__title {
+    }
+
+    &__card {
+    }
+
+    &__card-line {
+    }
+
+    &__name {
+    }
+
+    &__number {
+    }
+
+    &__nextbtn {
+    }
+}
+.build {
+
+    &__container {
+    }
+
+    &__about {
+    }
+
+    &__texts {
+    }
+
+    &__text {
+    }
+
+    &__title {
+    }
+
+    &__description {
+    }
+
+    &__buttons {
+    }
+
+    &__prevbtn {
+    }
+
+    &__btnimg {
+    }
+
+    &__nextbtn {
+    }
+
+    &__images {
+    }
+
+    &__image {
+    }
+
+    &__img {
+    }
+}
+.install {
+
+    &__container {
+    }
+
+    &__about {
+    }
+
+    &__title {
+    }
+
+    &__links {
+    }
+
+    &__apple {
+    }
+
+    &__images {
+    }
+}

@@ -3,7 +3,7 @@ $(document).ready(function() {
 		//Navigation
 		menu: '#menu',
 		lockAnchors: false,
-		anchors:['slide1', 'slide2', 'slide3'],
+		anchors:['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
 		navigation: true,
 		navigationPosition: 'right',
 		navigationTooltips: ['01', '02', '03', '04', '05', '06', '07', '08'],
@@ -49,7 +49,7 @@ $(document).ready(function() {
 		// verticalCentered: true,
 		// paddingTop: '3em',
 		// paddingBottom: '10px',
-		// fixedElements: '#header, .footer',
+		// fixedElements: '#header',
 		// responsiveWidth: 0,
 		// responsiveHeight: 0,
 		// responsiveSlides: false,

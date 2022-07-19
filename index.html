@@ -16,24 +16,30 @@
                 <a href="#" class="header__logo logo">
                     <img src="./img/logo.png" alt="Logo" class="logo__image">
                 </a>
-                <a href="#" class="header__apple applestore applestore_small">
-                    <object class="applestore__image" type="image/svg+xml" data="./img/apple.svg">
-                        Ваш браузер не поддерживает SVG!
-                    </object>
-                    <p class="applestore__install">установить</p>
-                    <object data="./img/AppStore.svg" type="image/svg+xml" class="applestore__name">
-                        Ваш браузер не поддерживает SVG!
-                    </object>
-                </a>
-                <a href="#" class="header__apple googleplay googleplay_small">
-                    <object class="googleplay__image" type="image/svg+xml" data="./img/googleplay.svg">
-                        Ваш браузер не поддерживает SVG!
-                    </object>
-                    <p class="googleplay__install">установить</p>
-                    <object data="./img/GoogleStore.svg" type="image/svg+xml" class="googleplay__name">
-                        Ваш браузер не поддерживает SVG!
-                    </object>
-                </a>
+                <div class="header__links">
+                    <a href="#" class="header__link applestore applestore_small">
+                        <object class="applestore__image" type="image/svg+xml" data="./img/apple.svg">
+                            Ваш браузер не поддерживает SVG!
+                        </object>
+                        <div class="applestore__body">
+                            <p class="applestore__install">установить</p>
+                            <object data="./img/AppStore.svg" type="image/svg+xml" class="applestore__name">
+                                Ваш браузер не поддерживает SVG!
+                            </object>
+                        </div>
+                    </a>
+                    <a href="#" class="header__link googleplay googleplay_small">
+                        <object class="googleplay__image" type="image/svg+xml" data="./img/googleplay.svg">
+                            Ваш браузер не поддерживает SVG!
+                        </object>
+                        <div class="googleplay__body">
+                            <p class="googleplay__install">установить</p>
+                            <object data="./img/GoogleStore.svg" type="image/svg+xml" class="googleplay__name">
+                                Ваш браузер не поддерживает SVG!
+                            </object>
+                        </div>
+                    </a>
+                </div>
             </div>
         </header>
         <main id="fullpage" class="main">
@@ -41,34 +47,38 @@
                 <div class="about__container">
                     <div class="about__text">
                         <h1 class="about__title title">
-                            Постройте дом быстрее и легче через приложение
+                            Постройте дом<br> быстрее и легче<br> через приложение
                         </h1>
                         <div class="about__links">
-                            <a href="#" class="about__apple applestore">
+                            <a href="#" class="about__link applestore">
                                 <object class="applestore__image" type="image/svg+xml" data="./img/apple.svg">
                                     Ваш браузер не поддерживает SVG!
                                 </object>
-                                <p class="applestore__install">установить</p>
-                                <object data="./img/AppStore.svg" type="image/svg+xml" class="applestore__name">
-                                    Ваш браузер не поддерживает SVG!
-                                </object>
+                                <div class="applestore__body">
+                                    <p class="applestore__install">установить</p>
+                                    <object data="./img/AppStore.svg" type="image/svg+xml" class="applestore__name">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                </div>
                             </a>
-                            <a href="#" class="about__apple googleplay">
+                            <a href="#" class="about__link googleplay">
                                 <object class="googleplay__image" type="image/svg+xml" data="./img/googleplay.svg">
                                     Ваш браузер не поддерживает SVG!
                                 </object>
-                                <p class="googleplay__install">установить</p>
-                                <object data="./img/GoogleStore.svg" type="image/svg+xml" class="googleplay__name">
-                                    Ваш браузер не поддерживает SVG!
-                                </object>
+                                <div class="googleplay__body">
+                                    <p class="googleplay__install">установить</p>
+                                    <object data="./img/GoogleStore.svg" type="image/svg+xml" class="googleplay__name">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="about__phoneimg">
                         <img src="./img/about-block/phone.png" alt="Phone" class="about__image">
                     </div>
-                    <a href="#" class="about__nextbtn btnnext">Как это работает?</a>
                 </div>
+                <a href="#page2" class="about__nextbtn btnnext"><i class="arrow"></i>Как это работает?</a>
             </section>
             <section id="how-work" class="section how-work">
                 <div class="how-work__container">
@@ -102,7 +112,7 @@
                             <img src="./img/how-block/phone-2.png" alt="Phone" class="card-how__image">
                         </div>
                     </div>
-                    <a href="#" class="how-work__nextbtn btnnext">Архитектура</a>
+                    <a href="#page3" class="how-work__nextbtn btnnext"><i class="arrow"></i>Архитектура</a>
                 </div>
             </section>
             <section id="trand" class="section trand">
@@ -133,7 +143,7 @@
                             <img src="./img/countries/korea.png" alt="czech" class="card-house__image">
                         </div>
                     </div>
-                    <a href="#" class="trand__nextbtn btnnext">ИЖС Стандарт</a>
+                    <a href="#page4" class="trand__nextbtn btnnext"><i class="arrow"></i>ИЖС Стандарт</a>
                 </div>
                 
             </section>
@@ -228,7 +238,7 @@
                             <p class="card-rating__name">HalleHouse</p>
                         </div>
                     </div>
-                    <a href="#" class="rating__nextbtn btnnext">Удобство</a>
+                    <a href="#page5" class="rating__nextbtn btnnext"><i class="arrow"></i>Удобство</a>
                 </div>
             </section>
             <section id="genius" class="section genius">
@@ -242,7 +252,7 @@
                     <h2 class="genius__title title">
                         Не тратьте 218 000 ₽ и 380 часов, задействуйте Genius — все инженеры и Росреестр в одном окне за 0 ₽
                     </h2>
-                    <a href="#" class="genius__nextbtn btnnext">Программа лояльности</a>
+                    <a href="#page6" class="genius__nextbtn btnnext"><i class="arrow"></i>Программа лояльности</a>
                 </div>
             </section>
             <section id="club" class="section club">
@@ -277,7 +287,7 @@
                             <p class="club__number">927 000 ₽</p>
                         </div>
                     </div>
-                    <a href="#" class="club__nextbtn btnnext">Детали</a>
+                    <a href="#page7" class="club__nextbtn btnnext"><i class="arrow"></i>Детали</a>
                 </div>
             </section>
             <section id="build" class="section build">
@@ -328,7 +338,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="build__nextbtn btnnext">Скачать приложение</a>
+                <a href="#page8" class="build__nextbtn btnnext"><i class="arrow"></i>Скачать приложение</a>
             </section>
             <section id="install" class="section install">
                 <div class="install__container">
@@ -339,19 +349,23 @@
                                 <object class="applestore__image" type="image/svg+xml" data="./img/apple.svg">
                                     Ваш браузер не поддерживает SVG!
                                 </object>
-                                <p class="applestore__install">установить</p>
-                                <object data="./img/AppStore.svg" type="image/svg+xml" class="applestore__name">
-                                    Ваш браузер не поддерживает SVG!
-                                </object>
+                                <div class="applestore__body">
+                                    <p class="applestore__install">установить</p>
+                                    <object data="./img/AppStore.svg" type="image/svg+xml" class="applestore__name">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                </div>
                             </a>
                             <a href="#" class="install__apple googleplay">
                                 <object class="googleplay__image" type="image/svg+xml" data="./img/googleplay.svg">
                                     Ваш браузер не поддерживает SVG!
                                 </object>
-                                <p class="googleplay__install">установить</p>
-                                <object data="./img/GoogleStore.svg" type="image/svg+xml" class="googleplay__name">
-                                    Ваш браузер не поддерживает SVG!
-                                </object>
+                                <div class="googleplay__body">
+                                    <p class="googleplay__install">установить</p>
+                                    <object data="./img/GoogleStore.svg" type="image/svg+xml" class="googleplay__name">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                </div>
                             </a>
                         </div>
                     </div>
