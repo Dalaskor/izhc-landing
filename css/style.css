@@ -101,16 +101,3 @@ img {
   overflow: hidden;
   flex-direction: column;
 }
-
-body {
-  background: #F5F5F5;
-  font-family: "Roboto Flex";
-  font-style: normal;
-  font-weight: 750;
-  font-size: 40px;
-  line-height: 44px;
-  letter-spacing: -0.5px;
-  color: #090909;
-  font-stretch: 151;
-  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
-}

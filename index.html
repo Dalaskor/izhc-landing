@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>ИЖС</title>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header id="header" class="header">
             <div class="header__container">
                 <a href="#" class="header__logo logo">
                     <img src="./img/logo.png" alt="Logo" class="logo__image">
@@ -34,6 +36,334 @@
                 </a>
             </div>
         </header>
+        <main id="fullpage" class="main">
+            <section id="about" class="section about">
+                <div class="about__container">
+                    <div class="about__text">
+                        <h1 class="about__title title">
+                            Постройте дом быстрее и легче через приложение
+                        </h1>
+                        <div class="about__links">
+                            <a href="#" class="about__apple applestore">
+                                <object class="applestore__image" type="image/svg+xml" data="./img/apple.svg">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                                <p class="applestore__install">установить</p>
+                                <object data="./img/AppStore.svg" type="image/svg+xml" class="applestore__name">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                            </a>
+                            <a href="#" class="about__apple googleplay">
+                                <object class="googleplay__image" type="image/svg+xml" data="./img/googleplay.svg">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                                <p class="googleplay__install">установить</p>
+                                <object data="./img/GoogleStore.svg" type="image/svg+xml" class="googleplay__name">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about__phoneimg">
+                        <img src="./img/about-block/phone.png" alt="Phone" class="about__image">
+                    </div>
+                    <a href="#" class="about__nextbtn btnnext">Как это работает?</a>
+                </div>
+            </section>
+            <section id="how-work" class="section how-work">
+                <div class="how-work__container">
+                    <h2 class="how-work__title title">Как это работает?</h2>
+                    <div class="how-work__cards">
+                        <div class="how-work__card card-how">
+                            <h3 class="card-how__number">1</h3>
+                            <p class="card-how__description">
+                                Выберите проект дома и застройщика
+                            </p>
+                            <div class="card-how__image card-house card-house_small">
+                                <div class="card-house__title">
+                                    <p class="card-house__name">Forest</p>
+                                    <p class="card-house__project">Новый проект</p>
+                                </div>
+                                <img src="./img/countries/сzech.png" alt="czech" class="card-house__image">
+                            </div>
+                        </div>
+                        <div class="how-work__card card-how">
+                            <h3 class="card-how__number">1</h3>
+                            <p class="card-how__description">
+                                Выберите проект дома и застройщика
+                            </p>
+                            <img src="./img/how-block/phone-1.png" alt="Phone" class="card-how__image">
+                        </div>
+                        <div class="how-work__card card-how">
+                            <h3 class="card-how__number">1</h3>
+                            <p class="card-how__description">
+                                Выберите проект дома и застройщика
+                            </p>
+                            <img src="./img/how-block/phone-2.png" alt="Phone" class="card-how__image">
+                        </div>
+                    </div>
+                    <a href="#" class="how-work__nextbtn btnnext">Архитектура</a>
+                </div>
+            </section>
+            <section id="trand" class="section trand">
+                <div class="trand__container">
+                    <div class="trand__title title">
+                        Будьте в тренде, найдите проект дома в каталоге всех стран
+                    </div>
+                    <div class="trand__housecards">
+                        <div class="trand__housecard card-house">
+                            <div class="card-house__title">
+                                <p class="card-house__name">Forest</p>
+                                <p class="card-house__project">Новый проект</p>
+                            </div>
+                            <img src="./img/countries/сzech.png" alt="czech" class="card-house__image">
+                        </div>
+                        <div class="trand__housecard card-house">
+                            <div class="card-house__title">
+                                <p class="card-house__name">Man's Land</p>
+                                <p class="card-house__project">Новый проект</p>
+                            </div>
+                            <img src="./img/countries/german.png" alt="czech" class="card-house__image">
+                        </div>
+                        <div class="trand__housecard card-house">
+                            <div class="card-house__title">
+                                <p class="card-house__name">Ger House</p>
+                                <p class="card-house__project">Новый проект</p>
+                            </div>
+                            <img src="./img/countries/korea.png" alt="czech" class="card-house__image">
+                        </div>
+                    </div>
+                    <a href="#" class="trand__nextbtn btnnext">ИЖС Стандарт</a>
+                </div>
+                
+            </section>
+            <section id="rating" class="section rating">
+                <div class="rating__container">
+                    <h2 class="rating__title title">
+                        Используйте ИЖС Стандарт — рейтинги застройщиков, чистота на стройке, онлайн договор и другое
+                    </h2>
+                    <div class="ratings__cards">
+                        <div class="rating__card card-rating">
+                            <div class="card-rating__rating">
+                                <div class="card-rating__stars">
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-3.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                </div>
+                                <p class="card-rating__number">4.5</p>
+                            </div>
+                            <div class="card-rating__logo">
+                                <object data="./img/rating-block/newhouse.svg" type="image/svg+xml" class="card-rating__image">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                            </div>
+                            <p class="card-rating__name">Нью Хаус</p>
+                        </div>
+                        <div class="rating__card card-rating">
+                            <div class="card-rating__rating">
+                                <div class="card-rating__stars">
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-3.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                </div>
+                                <p class="card-rating__number">4.5</p>
+                            </div>
+                            <div class="card-rating__logo">
+                                <object data="./img/rating-block/like.svg" type="image/svg+xml" class="card-rating__image">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                            </div>
+                            <p class="card-rating__name">Правильный брус</p>
+                        </div>
+                        <div class="rating__card card-rating">
+                            <div class="card-rating__rating">
+                                <div class="card-rating__stars">
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-2.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                    <object data="./img/rating-block/rating-3.svg" type="image/svg+xml" class="card-rating__star">
+                                        Ваш браузер не поддерживает SVG!
+                                    </object>
+                                </div>
+                                <p class="card-rating__number">4.5</p>
+                            </div>
+                            <div class="card-rating__logo">
+                                <object data="./img/rating-block/HalleHouse.svg" type="image/svg+xml" class="card-rating__image">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                            </div>
+                            <p class="card-rating__name">HalleHouse</p>
+                        </div>
+                    </div>
+                    <a href="#" class="rating__nextbtn btnnext">Удобство</a>
+                </div>
+            </section>
+            <section id="genius" class="section genius">
+                <div class="genius__container">
+                    <div class="genius__card">
+                        <h3 class="genius__card-title">Genius</h3>
+                        <p class="genius__description">
+                            218 000 ₽ уже на вашем счёте
+                        </p>
+                    </div>
+                    <h2 class="genius__title title">
+                        Не тратьте 218 000 ₽ и 380 часов, задействуйте Genius — все инженеры и Росреестр в одном окне за 0 ₽
+                    </h2>
+                    <a href="#" class="genius__nextbtn btnnext">Программа лояльности</a>
+                </div>
+            </section>
+            <section id="club" class="section club">
+                <div class="club__container">
+                    <div class="club__badge">ИЖС Club</div>
+                    <h2 class="club__title title">
+                        Сохраните до миллиона рублей с программой лояльности ИЖС Club
+                    </h2>
+                    <div class="club__card">
+                        <div class="club__card-line">
+                            <p class="club__name">R E D</p>
+                            <p class="club__number">— 500 000 ₽</p>
+                        </div>
+                        <div class="club__card-line">
+                            <p class="club__name">Кэшбэк на Landscape</p>
+                            <p class="club__number">— 55 000 ₽</p>
+                        </div>
+                        <div class="club__card-line">
+                            <p class="club__name">ИЖС Genius</p>
+                            <p class="club__number">— 218 000 ₽</p>
+                        </div>
+                        <div class="club__card-line">
+                            <p class="club__name">Уборка и вывоз мусора</p>
+                            <p class="club__number">— 89 000 ₽</p>
+                        </div>
+                        <div class="club__card-line">
+                            <p class="club__name">Доставка</p>
+                            <p class="club__number">— 65 000 ₽</p>
+                        </div>
+                        <div class="club__card-line">
+                            <p class="club__name">Вы экономите </p>
+                            <p class="club__number">927 000 ₽</p>
+                        </div>
+                    </div>
+                    <a href="#" class="club__nextbtn btnnext">Детали</a>
+                </div>
+            </section>
+            <section id="build" class="section build">
+                <div class="build__container">
+                    <div class="build__about">
+                        <div class="build__texts">
+                            <div class="build__text">
+                                <h2 class="build__title">Стройка</h2>
+                                <p class="build__description">
+                                    Следите за стройкой — инженеры все сделают и подгрузят информацию
+                                </p>
+                            </div>
+                            <div class="build__text">
+                                <h2 class="build__title">Справедливая цена</h2>
+                                <p class="build__description">
+                                    Сравнивайте и выбирайте предложения от разных застройщиков
+                                </p>
+                            </div>
+                            <div class="build__text">
+                                <h2 class="build__title">Сервисы</h2>
+                                <p class="build__description">
+                                    Используйте сервисы от проверки участка до реконструкции дома с кэшбеком до 100%
+                                </p>
+                            </div>
+                        </div>
+                        <div class="build__buttons">
+                            <button class="build__prevbtn">
+                                <object data="./img/build-block/prev-btn.svg" type="image/svg+xml" class="build__btnimg">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                            </button>
+                            <button class="build__nextbtn">
+                                <object data="./img/build-block/next-btn.svg" type="image/svg+xml" class="build__btnimg">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="build__images">
+                        <div class="build__image">
+                            <img src="./img/build-block/phone-1.png" alt="" class="build__img">
+                        </div>
+                        <div class="build__image">
+                            <img src="./img/build-block/phone-2.png" alt="" class="build__img">
+                        </div>
+                        <div class="build__image">
+                            <img src="./img/build-block/phone-3.png" alt="" class="build__img">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="build__nextbtn btnnext">Скачать приложение</a>
+            </section>
+            <section id="install" class="section install">
+                <div class="install__container">
+                    <div class="install__about">
+                        <h2 class="install__title">Установите приложение и начинайте строить</h2>
+                        <div class="install__links">
+                            <a href="#" class="install__apple applestore">
+                                <object class="applestore__image" type="image/svg+xml" data="./img/apple.svg">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                                <p class="applestore__install">установить</p>
+                                <object data="./img/AppStore.svg" type="image/svg+xml" class="applestore__name">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                            </a>
+                            <a href="#" class="install__apple googleplay">
+                                <object class="googleplay__image" type="image/svg+xml" data="./img/googleplay.svg">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                                <p class="googleplay__install">установить</p>
+                                <object data="./img/GoogleStore.svg" type="image/svg+xml" class="googleplay__name">
+                                    Ваш браузер не поддерживает SVG!
+                                </object>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="install__images">
+
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" integrity="sha512-XOpdFagEEv9XMxN/2EdvFL/PfGtFDjX+AkRznsFHDtdC05YWdkMnz5JZUfrbnEabOQaMc7YNTl2xPbOu3J858Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
