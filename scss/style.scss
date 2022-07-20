@@ -788,8 +788,12 @@ body {
 .build {
 
     &__container {
+    }
+
+    &__body {
         display: flex;
-        justify-self: space-between;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__about {
@@ -835,19 +839,27 @@ body {
     }
 
     &__buttons {
+        position: absolute;
+        top: 62%;
         display: flex;
         justify-content: start;
         align-items: center;
         gap: 12px;
     }
 
-    &__prevbtn {
+    &__nextbtn {
+        position: absolute;
+        left: 45%;
+        top: 95%;
+    }
+
+    &__prev {
     }
 
     &__btnimg {
     }
 
-    &__nextbtn {
+    &__next {
     }
 
     &__images {
@@ -862,15 +874,28 @@ body {
 .install {
 
     &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
     }
 
     &__title {
+        width: 480px;
+        text-align: center;
     }
 
     &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
     &__apple {

@@ -724,9 +724,10 @@ body {
   top: 17%;
 }
 
-.build__container {
+.build__body {
   display: flex;
-  justify-self: space-between;
+  justify-content: space-between;
+  align-items: center;
 }
 .build__about {
   display: flex;
@@ -764,8 +765,36 @@ body {
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
 .build__buttons {
+  position: absolute;
+  top: 62%;
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 12px;
+}
+.build__nextbtn {
+  position: absolute;
+  left: 45%;
+  top: 95%;
+}
+.install__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.install__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.install__title {
+  width: 480px;
+  text-align: center;
+}
+.install__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

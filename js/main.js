@@ -83,3 +83,12 @@ document.addEventListener('DOMContentLoaded', function() {
   		interval: 3000
 	});
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+	new ChiefSlider('.slider-build', {
+		loop: true,
+		swipe: true,
+		autoplay: false,
+  		interval: 3000
+	});
+  });
