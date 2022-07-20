@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- FullPage.Js CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ChiefSlider CSS -->
+    <link rel="stylesheet" href="/assets/css/chief-slider.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>ИЖС</title>
 </head>
@@ -85,11 +88,13 @@
                     <h2 class="how-work__title title">Как это работает?</h2>
                     <div class="how-work__cards">
                         <div class="how-work__card card-how">
-                            <h3 class="card-how__number">1</h3>
-                            <p class="card-how__description">
-                                Выберите проект дома и застройщика
-                            </p>
-                            <div class="card-how__image card-house card-house_small">
+                            <div class="card-how__body">
+                                <h3 class="card-how__number">1</h3>
+                                <p class="card-how__description">
+                                    Выберите проект дома и застройщика
+                                </p>
+                            </div>
+                            <div class="card-how__example card-house card-house_small">
                                 <div class="card-house__title">
                                     <p class="card-house__name">Forest</p>
                                     <p class="card-house__project">Новый проект</p>
@@ -98,54 +103,78 @@
                             </div>
                         </div>
                         <div class="how-work__card card-how">
-                            <h3 class="card-how__number">1</h3>
-                            <p class="card-how__description">
-                                Выберите проект дома и застройщика
-                            </p>
-                            <img src="./img/how-block/phone-1.png" alt="Phone" class="card-how__image">
+                            <div class="card-how__body">
+                                <h3 class="card-how__number">2</h3>
+                                <p class="card-how__description">
+                                    Выберите проект дома и застройщика
+                                </p>
+                            </div>
+                            <div class="card-how__image">
+                                <img src="./img/how-block/phone-1.png" alt="Phone" class="card-how__image">
+                            </div>
                         </div>
                         <div class="how-work__card card-how">
-                            <h3 class="card-how__number">1</h3>
-                            <p class="card-how__description">
-                                Выберите проект дома и застройщика
-                            </p>
-                            <img src="./img/how-block/phone-2.png" alt="Phone" class="card-how__image">
+                            <div class="card-how__body">
+                                <h3 class="card-how__number">3</h3>
+                                <p class="card-how__description">
+                                    Выберите проект дома и застройщика
+                                </p>
+                            </div>
+                            <div class="card-how__image">
+                                <img src="./img/how-block/phone-2.png" alt="Phone" class="card-how__img">
+                            </div>
                         </div>
                     </div>
-                    <a href="#page3" class="how-work__nextbtn btnnext"><i class="arrow"></i>Архитектура</a>
                 </div>
+                <a href="#page3" class="how-work__nextbtn btnnext"><i class="arrow"></i>Архитектура</a>
             </section>
             <section id="trand" class="section trand">
                 <div class="trand__container">
                     <div class="trand__title title">
-                        Будьте в тренде, найдите проект дома в каталоге всех стран
+                        Будьте в тренде, найдите проект дома<br>в каталоге всех стран
                     </div>
-                    <div class="trand__housecards">
-                        <div class="trand__housecard card-house">
-                            <div class="card-house__title">
-                                <p class="card-house__name">Forest</p>
-                                <p class="card-house__project">Новый проект</p>
+                    <div class="slider">
+                        <div class="slider__wrapper">
+                            <div class="trand__housecards slider__items">
+                                <div class="trand__housecard card-house slider__item">
+                                    <div class="card-house__title">
+                                        <p class="card-house__name">Forest</p>
+                                        <p class="card-house__project">Новый проект</p>
+                                    </div>
+                                    <img src="./img/countries/сzech.png" alt="czech" class="card-house__image">
+                                </div>
+                                <div class="trand__housecard card-house slider__item">
+                                    <div class="card-house__title">
+                                        <p class="card-house__name">Man's Land</p>
+                                        <p class="card-house__project">Новый проект</p>
+                                    </div>
+                                    <img src="./img/countries/german.png" alt="czech" class="card-house__image">
+                                </div>
+                                <div class="trand__housecard card-house slider__item">
+                                    <div class="card-house__title">
+                                        <p class="card-house__name">Ger House</p>
+                                        <p class="card-house__project">Новый проект</p>
+                                    </div>
+                                    <img src="./img/countries/korea.png" alt="czech" class="card-house__image">
+                                </div>
+                                <div class="trand__housecard card-house slider__item">
+                                    <div class="card-house__title">
+                                        <p class="card-house__name">Baker</p>
+                                        <p class="card-house__project">Новый проект</p>
+                                    </div>
+                                    <img src="./img/countries/uk.png" alt="czech" class="card-house__image">
+                                </div>
                             </div>
-                            <img src="./img/countries/сzech.png" alt="czech" class="card-house__image">
                         </div>
-                        <div class="trand__housecard card-house">
-                            <div class="card-house__title">
-                                <p class="card-house__name">Man's Land</p>
-                                <p class="card-house__project">Новый проект</p>
-                            </div>
-                            <img src="./img/countries/german.png" alt="czech" class="card-house__image">
-                        </div>
-                        <div class="trand__housecard card-house">
-                            <div class="card-house__title">
-                                <p class="card-house__name">Ger House</p>
-                                <p class="card-house__project">Новый проект</p>
-                            </div>
-                            <img src="./img/countries/korea.png" alt="czech" class="card-house__image">
+                        <div class="trand__buttons">
+                            <button href="#" class="trand__prev slider-button slider-button_prev slider__control" data-slide="prev">
+                            </button>
+                            <button href="#" class="trand__next slider-button slider-button_next slider__control" data-slide="next">
+                            </button>
                         </div>
                     </div>
-                    <a href="#page4" class="trand__nextbtn btnnext"><i class="arrow"></i>ИЖС Стандарт</a>
                 </div>
-                
+                <a href="#page4" class="trand__nextbtn btnnext"><i class="arrow"></i>ИЖС Стандарт</a>
             </section>
             <section id="rating" class="section rating">
                 <div class="rating__container">
@@ -314,12 +343,12 @@
                             </div>
                         </div>
                         <div class="build__buttons">
-                            <button class="build__prevbtn">
+                            <button class="build__prevbtn slider-button">
                                 <object data="./img/build-block/prev-btn.svg" type="image/svg+xml" class="build__btnimg">
                                     Ваш браузер не поддерживает SVG!
                                 </object>
                             </button>
-                            <button class="build__nextbtn">
+                            <button class="build__nextbtn slider-button">
                                 <object data="./img/build-block/next-btn.svg" type="image/svg+xml" class="build__btnimg">
                                     Ваш браузер не поддерживает SVG!
                                 </object>
@@ -376,8 +405,12 @@
             </section>
         </main>
     </div>
+    <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FullPage.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" integrity="sha512-XOpdFagEEv9XMxN/2EdvFL/PfGtFDjX+AkRznsFHDtdC05YWdkMnz5JZUfrbnEabOQaMc7YNTl2xPbOu3J858Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ChiefSlider JavaScript -->
+    <script defer src="/assets/js/chief-slider.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

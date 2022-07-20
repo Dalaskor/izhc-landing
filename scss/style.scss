@@ -31,7 +31,9 @@ $maxWidth: 1158;
         max-width: none;
     }
 }
-
+body {
+    background-color: #E5E5E5;
+}
 .wrapper {
     display: flex;
     min-height: 100%;
@@ -84,7 +86,7 @@ $maxWidth: 1158;
 .applestore {
     width: 179px;
     height: 64px;
-    background: #6A6A6A;
+    background-color: #6A6A6A;
     border-radius: 36px;
     display: flex;
     justify-content: center;
@@ -298,40 +300,168 @@ $maxWidth: 1158;
     }
 
     &__cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 24px;
+        margin-top: 48px;
     }
 
     &__card {
     }
 
     &__nextbtn {
+        position: relative;
+        left: 45%;
+        top: 17%;
     }
 }
 .card-how {
+    width: 312px;
+    height: 432px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &:nth-child(1){
+        background: #5337FF;
+    }
+
+    &:nth-child(2){
+        background: #56ABFF;
+    }
+
+    &:nth-child(3){
+        background: #883FFF;
+    }
+
+    &__body {
+        padding: 24px 24px 0px 24px;
+    }
 
     &__number {
+        font-family: 'Roboto Flex';
+        font-style: normal;
+        font-weight: 750;
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.5px;
+        color: #FFFFFF;
+        font-stretch: 151;
+        font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
     }
 
     &__description {
+        margin-top: 16px;
+        font-family: 'Roboto Flex';
+        font-style: normal;
+        font-weight: 750;
+        font-size: 20px;
+        line-height: 28px;
+        color: #FFFFFF;
+        font-stretch: 151;
+        font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+    }
+
+    &__example {
+        margin-bottom: 15px;
+    }
+
+    &__image {
+        margin-top: 24px;
+        width: 258px;
+        height: 261px;
+        max-height: 248px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.card-house {
+    width: 456px;
+    height: 288px;
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    background: url('./../img/how-block/house.png') no-repeat center bottom;
+    background-color: #090909;
+
+    &_small {
+        width: 312px;
+        height: 196px;
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__name {
+        font-family: 'Roboto Flex';
+        font-style: normal;
+        font-weight: 750;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        font-stretch: 151;
+        font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+    }
+
+    &__project {
+        width: 149px;
+        height: 32px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        font-family: 'Roboto Flex';
+        font-style: normal;
+        font-weight: 750;
+        font-size: 14px;
+        line-height: 20px;
+        color: #090909;
+        font-stretch: 151;
+        font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__image {
     }
 }
-.card-house {
+.slider-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
 
-    &_small {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
     }
 
-    &__title {
+    &.slider-button_prev {
+        background: url("./../img/build-block/prev-btn.svg") no-repeat center center;
+        background-color: #FFFFFF;
     }
 
-    &__name {
-    }
-
-    &__project {
-    }
-
-    &__image {
+    &.slider-button_next {
+        background: url("./../img/build-block/next-btn.svg") no-repeat center center;
+        background-color: #FFFFFF;
     }
 }
 .trand {
@@ -343,12 +473,45 @@ $maxWidth: 1158;
     }
 
     &__housecards {
+        margin-top: 56px;
+        display: flex;
+        gap: 1px;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__housecard {
+        &:nth-child(n){
+            background: url('./../img/trand-block/house-1.png') no-repeat center bottom;
+            background-color: #090909;
+        }
+
+        &:nth-child(2n){
+            background: url('./../img/trand-block/house-2.png') no-repeat center bottom;
+            background-color: #5437FF;
+        }
+
+        &:nth-child(3n){
+            background: url('./../img/trand-block/house-3.png') no-repeat center bottom;
+            background-color: #FF6700;
+        }
+        &:nth-child(4n){
+            background: url('./../img/trand-block/house-4.png') no-repeat center bottom;
+            background-color: #883FFF;
+        }
+    }
+
+    &__buttons {
+        margin-top: 32px;
+        display: flex;
+        justify-content: end;
+        gap: 12px;
     }
 
     &__nextbtn {
+        position: relative;
+        left: 45%;
+        top: 17%;
     }
 }
 .rating {

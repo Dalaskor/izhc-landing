@@ -1,3 +1,4 @@
+// FullPage.js init
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		//Navigation
@@ -72,3 +73,13 @@ $(document).ready(function() {
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 	});
 });
+
+// ChiefSlider init
+document.addEventListener('DOMContentLoaded', function() {
+	new ChiefSlider('.slider', {
+		loop: true,
+		swipe: true,
+		autoplay: true,
+  		interval: 3000
+	});
+  });
