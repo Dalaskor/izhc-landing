@@ -506,3 +506,84 @@ body {
   left: 45%;
   top: 17%;
 }
+
+.rating__cards {
+  margin-top: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.rating__nextbtn {
+  position: relative;
+  left: 45%;
+  top: 21%;
+}
+
+.card-rating {
+  width: 167px;
+  height: 257px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-rating:nth-child(n) .card-rating__logo {
+  background-color: #E0E0E0;
+}
+.card-rating:nth-child(2n) .card-rating__logo {
+  background-color: #EFB178;
+}
+.card-rating:nth-child(3n) .card-rating__logo {
+  background-color: #C50002;
+}
+.card-rating__rating {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+}
+.card-rating__stars {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+}
+.card-rating__number {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 12px;
+  line-height: 125%;
+  color: #090909;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+.card-rating__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 8px;
+}
+.card-rating__logo {
+  width: 80px;
+  height: 80px;
+  border: 2.76786px solid #FFFFFF;
+  border-radius: 193.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-rating__name {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 14px;
+  line-height: 130%;
+  color: #090909;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
