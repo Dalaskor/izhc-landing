@@ -408,9 +408,9 @@ body {
   gap: 8px;
   margin-top: 48px;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 992.98px) {
   .how-work__cards {
-    width: 345px;
+    margin-right: 45px;
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -419,9 +419,14 @@ body {
     display: none;
   }
 }
+@media (max-width: 479.98px) {
+  .how-work__cards {
+    margin-right: 50px;
+  }
+}
 .how-work__nextbtn {
   position: relative;
-  top: 17%;
+  top: 14%;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -634,8 +639,10 @@ body {
     gap: 5px;
   }
 }
-.rating__card:nth-child(n+2) {
-  display: none;
+@media (max-width: 479.98px) {
+  .rating__card:nth-child(n+2) {
+    display: none;
+  }
 }
 .rating__nextbtn {
   position: relative;
@@ -644,6 +651,11 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 992.98px) {
+  .rating__nextbtn {
+    top: 17%;
+  }
 }
 
 .card-rating {
@@ -781,6 +793,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 992.98px) {
+  .genius__nextbtn {
+    top: 15%;
+  }
+}
 
 .club__badge {
   width: 109px;
@@ -818,6 +835,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 992.98px) {
+  .club__card {
+    margin-left: 0;
+  }
 }
 @media (max-width: 479.98px) {
   .club__card {
@@ -915,17 +937,35 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 992.98px) {
+  .club__nextbtn {
+    top: 15%;
+  }
+}
 
+@media (max-width: 992.98px) {
+  .build__container {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 479.98px) {
+  .build__container {
+    margin-top: 60px;
+  }
+}
 .build__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 992.98px) {
   .build__body {
     flex-direction: column-reverse;
-    gap: 55px;
-    margin-top: 60px;
+  }
+}
+@media (max-width: 479.98px) {
+  .build__body {
+    gap: 60px;
   }
 }
 .build__about {
@@ -982,6 +1022,12 @@ body {
   align-items: center;
   gap: 12px;
 }
+@media (max-width: 992.98px) {
+  .build__buttons {
+    position: relative;
+    top: -350px;
+  }
+}
 @media (max-width: 479.98px) {
   .build__buttons {
     position: relative;
@@ -995,10 +1041,32 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 992.98px) {
+  .build__nextbtn {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 479.98px) {
+  .build__nextbtn {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 992.98px) {
+  .build__prev {
+    position: absolute;
+    left: 10%;
+  }
+}
 @media (max-width: 479.98px) {
   .build__prev {
     position: absolute;
     left: 10%;
+  }
+}
+@media (max-width: 992.98px) {
+  .build__next {
+    position: absolute;
+    right: 10%;
   }
 }
 @media (max-width: 479.98px) {
@@ -1007,10 +1075,26 @@ body {
     right: 10%;
   }
 }
+.build__image {
+  width: 312px;
+  height: 631px;
+}
+@media (max-width: 992.98px) {
+  .build__image {
+    width: 220px;
+    height: 444px;
+  }
+}
 @media (max-width: 479.98px) {
   .build__image {
     width: 176px;
     height: 308px;
+  }
+}
+@media (max-width: 992.98px) {
+  .build__img {
+    min-width: 100%;
+    max-width: 100%;
   }
 }
 @media (max-width: 479.98px) {

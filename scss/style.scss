@@ -362,16 +362,18 @@ body {
         align-items: center;
         gap: 8px;
         margin-top: 48px;
-
-        @media (max-width: 479.98px) {
-            width: 345px;
+        @media (max-width: 992.98px) {
+            margin-right: 45px;
             overflow-x: scroll;
             -ms-overflow-style: none;
             scrollbar-width: none;
             &::-webkit-scrollbar {
                 display: none;
             }
-            
+        }
+
+        @media (max-width: 479.98px) {
+            margin-right: 50px;
         }
     }
 
@@ -380,7 +382,7 @@ body {
 
     &__nextbtn {
         position: relative;
-        top: 17%;
+        top: 14%;
         display: flex;
         width: 100%;
         justify-content: center;
@@ -627,9 +629,12 @@ body {
     }
 
     &__card {
-        &:nth-child(n+2){
-            display: none;
+        @media (max-width: 479.98px) {
+            &:nth-child(n+2){
+                display: none;
+            }
         }
+        
     }
 
     &__nextbtn {
@@ -639,6 +644,9 @@ body {
         width: 100%;
         justify-content: center;
         align-items: center;
+        @media (max-width: 992.98px) {
+            top: 17%;
+        }
     }
 }
 .card-rating {
@@ -795,6 +803,9 @@ body {
         width: 100%;
         justify-content: center;
         align-items: center;
+        @media (max-width: 992.98px) {
+            top: 15%;
+        }
     }
 }
 .club {
@@ -838,6 +849,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media (max-width: 992.98px) {
+            margin-left: 0;
+        }
         @media (max-width: 479.98px) {
             margin-top: 45px;
             width: 299px;
@@ -935,21 +949,31 @@ body {
         width: 100%;
         justify-content: center;
         align-items: center;
+        @media (max-width: 992.98px) {
+            top: 15%;
+        }
     }
 }
 .build {
 
     &__container {
+        @media (max-width: 992.98px) {
+            margin-top: 100px;
+        }
+        @media (max-width: 479.98px) {
+            margin-top: 60px;
+        }
     }
 
     &__body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media (max-width: 479.98px) {
+        @media (max-width: 992.98px) {
             flex-direction: column-reverse;
-            gap: 55px;
-            margin-top: 60px;
+        }
+        @media (max-width: 479.98px) {
+            gap: 60px;
         }
     }
 
@@ -968,7 +992,8 @@ body {
         flex-direction: column;
         justify-content: start;
         gap: 24px;
-        @media (max-width: 479.98px) {
+        @media (max-width: 992.98px) {
+            // gap: 5px;
         }
     }
 
@@ -1013,9 +1038,11 @@ body {
         justify-content: start;
         align-items: center;
         gap: 12px;
+        @media (max-width: 992.98px) {
+            position: relative;
+            top: -350px;
+        }
         @media (max-width: 479.98px) {
-            // width: 250px;
-            // justify-content: space-between;
             position: relative;
             top: 50px;
         }
@@ -1027,9 +1054,19 @@ body {
         width: 100%;
         justify-content: center;
         align-items: center;
+        @media (max-width: 992.98px) {
+            margin-top: 10px;
+        }
+        @media (max-width: 479.98px) {
+            margin-top: 150px;
+        }
     }
 
     &__prev {
+        @media (max-width: 992.98px) {
+            position: absolute;
+            left: 10%;
+        }
         @media (max-width: 479.98px) {
             position: absolute;
             left: 10%;
@@ -1040,6 +1077,10 @@ body {
     }
 
     &__next {
+        @media (max-width: 992.98px) {
+            position: absolute;
+            right: 10%;
+        }
         @media (max-width: 479.98px) {
             position: absolute;
             right: 10%;
@@ -1050,6 +1091,12 @@ body {
     }
 
     &__image {
+        width: 312px;
+        height: 631px;
+        @media (max-width: 992.98px) {
+            width: 220px;
+            height: 444px;
+        }
         @media (max-width: 479.98px) {
             width: 176px;
             height: 308px;
@@ -1057,6 +1104,10 @@ body {
     }
 
     &__img {
+        @media (max-width: 992.98px) {
+            min-width: 100%;
+            max-width: 100%;
+        }
         @media (max-width: 479.98px) {
             min-width: 100%;
             max-width: 100%;
