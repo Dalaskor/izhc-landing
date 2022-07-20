@@ -28,7 +28,7 @@ $(document).ready(function() {
 		continuousHorizontal: false,
 		scrollHorizontally: false,
 		interlockedSlides: false,
-		dragAndMove: false,
+		dragAndMove: true,
 		offsetSections: false,
 		resetSliders: false,
 		fadingEffect: false,
@@ -47,7 +47,7 @@ $(document).ready(function() {
 
 		//Design
 		// controlArrows: true,
-		// verticalCentered: true,
+		verticalCentered: true,
 		// paddingTop: '3em',
 		// paddingBottom: '10px',
 		// fixedElements: '#header',

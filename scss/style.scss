@@ -50,6 +50,9 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 767.98px) {
+            justify-content: center;
+        }
     }
 
     &__logo {
@@ -62,6 +65,9 @@ body {
         display: flex;
         align-items: center;
         gap: 8px;
+        @media (max-width: 767.98px) {
+            display: none;
+        }
     }
 
     &__link {
@@ -214,14 +220,24 @@ body {
 .section {
 }
 .about {
-    background: url('./../img/about-block/background.png') no-repeat 50% top;
+    background: url('./../img/about-block/background.png') no-repeat 80% top;
     background-size: contain;
+
+    @media (max-width: 479.98px) {
+        background-size: 55%;
+        background-position: left;
+    }
 
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: start;
-
+        @media (max-width: 479.98px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+        }
     }
 
     &__text {
@@ -229,12 +245,22 @@ body {
         flex-direction: column;
         align-items: start;
         padding-top: 142px;
+        @media (max-width: 479.98px) {
+            // padding-bottom: 600px;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__title {
         max-width: 541px;
         max-height: 132px;
         // margin-top: 87px;
+        @media (max-width: 479.98px) {
+            width: 327px;
+            text-align: center;
+        }
     }
 
     &__links {
@@ -242,34 +268,64 @@ body {
         align-items: center;
         gap: 24px;
         margin-top: 61px;
+
+        @media (max-width: 479.98px) {
+            margin: 0;
+            position: absolute;
+            top: 75%;
+        }
     }
 
     &__link {
     }
 
     &__phoneimg {
+        @media (max-width: 479.98px) {
+            display: flex;
+            width: 100%;
+            justify-content: end;
+            height: 313px;
+            padding-right: 60px;
+        }
     }
 
     &__image {
-        margin-left: 227px;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     &__nextbtn {
         position: relative;
-        left: 45%;
         top: 17%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 }
 .title {
     font-family: 'Roboto Flex';
     font-style: normal;
     font-weight: 750;
-    font-size: 40px;
+    // font-size: 40px;
+    @include adaptiv-font(40, 16);
     line-height: 44px;
     letter-spacing: -0.5px;
     color: #090909;
     font-stretch: 151;
     font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+
+    @media (max-width: 479.98px) {
+        font-family: 'Roboto Flex';
+        font-style: normal;
+        font-weight: 750;
+        // font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #090909;
+        font-stretch: 151;
+        font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+    }
 }
 .btnnext {
     font-family: 'Roboto Flex';
@@ -283,13 +339,11 @@ body {
     font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
 }
 .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    margin-right: 8px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('./../img/arrow.svg') no-repeat center center;
+    padding-right: 5px;
 }
 .how-work {
 
@@ -297,14 +351,28 @@ body {
     }
 
     &__title {
+        @media (max-width: 479.98px) {
+            text-align: left;
+        }
     }
 
     &__cards {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // gap: 24px;
+        gap: 8px;
         margin-top: 48px;
+
+        @media (max-width: 479.98px) {
+            width: 345px;
+            overflow-x: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            
+        }
     }
 
     &__card {
@@ -312,8 +380,11 @@ body {
 
     &__nextbtn {
         position: relative;
-        left: 45%;
         top: 17%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 }
 .card-how {
@@ -384,6 +455,14 @@ body {
         height: 100%;
     }
 }
+@media (max-width: 479.98px) {
+    .slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      gap: 1px;
+      user-select: none;
+    }
+  }
 .card-house {
     width: 456px;
     height: 288px;
@@ -395,6 +474,11 @@ body {
     justify-content: space-between;
     background: url('./../img/how-block/house.png') no-repeat center bottom;
     background-color: #090909;
+
+    @media (max-width: 479.98px) {
+        width: 270px;
+        height: 196px;
+    }
 
     &_small {
         width: 312px;
@@ -467,12 +551,17 @@ body {
 .trand {
 
     &__container {
+        @media (max-width: 479.98px) {
+            padding-right: 65px;
+        }
     }
 
     &__title {
+        text-align: left;
     }
 
     &__housecards {
+        // width: 100%;
         margin-top: 56px;
         display: flex;
         gap: 1px;
@@ -510,8 +599,11 @@ body {
 
     &__nextbtn {
         position: relative;
-        left: 45%;
         top: 17%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 }
 .rating {
@@ -528,15 +620,25 @@ body {
         justify-content: center;
         align-items: center;
         gap: 25px;
+        @media (max-width: 479.98px) {
+            // margin-top: 20px;
+            gap: 5px;
+        }
     }
 
     &__card {
+        &:nth-child(n+2){
+            display: none;
+        }
     }
 
     &__nextbtn {
         position: relative;
-        left: 45%;
-        top: 21%;
+        top: 22%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 }
 .card-rating {
@@ -639,18 +741,27 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media (max-width: 479.98px) {
+            background-size: 75%;
+            width: 299px;
+            height: 168px;
+        }
     }
 
     &__card-title {
         font-family: 'Roboto Flex';
         font-style: normal;
         font-weight: 750;
-        font-size: 24px;
+        // font-size: 24px;
+        @include adaptiv-font(24, 14);
         line-height: 28px;
         letter-spacing: -0.5px;
         color: #FFFFFF;
         font-stretch: 151;
         font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        @media (max-width: 479.98px) {
+            line-height: 20px;
+        }
     }
 
     &__description {
@@ -658,22 +769,32 @@ body {
         font-family: 'Roboto Flex';
         font-style: normal;
         font-weight: 750;
-        font-size: 32px;
+        // font-size: 32px;
+        @include adaptiv-font(32, 16);
         line-height: 36px;
         letter-spacing: -0.5px;
         color: #FFFFFF;
         font-stretch: 151;
         font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        @media (max-width: 479.98px) {
+            line-height: 20px;
+        }
     }
 
     &__title {
         margin-top: 56px;
+        @media (max-width: 479.98px) {
+            text-align: left;
+        }
     }
 
     &__nextbtn {
         position: relative;
-        left: 45%;
         top: 21%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 }
 .club {
@@ -701,6 +822,9 @@ body {
 
     &__title {
         margin-top: 24px;
+        @media (max-width: 479.98px) {
+            text-align: left;
+        }
     }
 
     &__card {
@@ -714,12 +838,21 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media (max-width: 479.98px) {
+            margin-top: 45px;
+            width: 299px;
+            height: 200px;
+            margin-left: 0;
+        }
     }
 
     &__card-lines {
         display: flex;
         flex-direction: column;
         gap: 12px;
+        @media (max-width: 479.98px) {
+            gap: 5px;
+        }
     }
 
     &__card-line {
@@ -732,22 +865,30 @@ body {
         font-family: 'Roboto Flex';
         font-style: normal;
         font-weight: 550;
-        font-size: 20px;
+        // font-size: 20px;
+        @include adaptiv-font(20, 14);
         line-height: 28px;
         color: rgba(255, 255, 255, 0.8);
         font-stretch: 151;
         font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        @media (max-width: 479.98px) {
+            line-height: 20px;
+        }
     }
 
     &__number {
         font-family: 'Roboto Flex';
         font-style: normal;
         font-weight: 550;
-        font-size: 20px;
+        // font-size: 20px;
+        @include adaptiv-font(20, 14);
         line-height: 28px;
         color: #FFB6B6;
         font-stretch: 151;
         font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        @media (max-width: 479.98px) {
+            line-height: 20px;
+        }
     }
 
     &__card-result {
@@ -760,29 +901,40 @@ body {
         font-family: 'Roboto Flex';
         font-style: normal;
         font-weight: 750;
-        font-size: 20px;
+        // font-size: 20px;
+        @include adaptiv-font(20, 14);
         line-height: 28px;
         color: #FFFFFF;
         font-stretch: 151;
         font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        @media (max-width: 479.98px) {
+            line-height: 20px;
+        }
     }
 
     &__result-number {
         font-family: 'Roboto Flex';
         font-style: normal;
         font-weight: 750;
-        font-size: 20px;
+        // font-size: 20px;
+        @include adaptiv-font(20, 14);
         line-height: 28px;
         color: #4FEA90;
         font-stretch: 151;
         font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        @media (max-width: 479.98px) {
+            line-height: 20px;
+        }
         
     }
 
     &__nextbtn {
         position: relative;
-        left: 45%;
         top: 17%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 }
 .build {
@@ -794,6 +946,11 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 479.98px) {
+            flex-direction: column-reverse;
+            gap: 55px;
+            margin-top: 60px;
+        }
     }
 
     &__about {
@@ -811,18 +968,24 @@ body {
         flex-direction: column;
         justify-content: start;
         gap: 24px;
+        @media (max-width: 479.98px) {
+        }
     }
 
     &__title {
         font-family: 'Roboto Flex';
         font-style: normal;
         font-weight: 750;
-        font-size: 32px;
+        // font-size: 32px;
+        @include adaptiv-font(32, 16);
         line-height: 36px;
         letter-spacing: -0.5px;
         color: #090909;
         font-stretch: 151;
         font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        @media (max-width: 479.98px) {
+            line-height: 20px;
+        }
     }
 
     &__description {
@@ -830,12 +993,17 @@ body {
         font-family: 'Roboto Flex';
         font-style: normal;
         font-weight: 750;
-        font-size: 32px;
+        // font-size: 32px;
+        @include adaptiv-font(32, 16);
         line-height: 36px;
         letter-spacing: -0.5px;
         color: #6A6A6A;
         font-stretch: 151;
         font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+        @media (max-width: 479.98px) {
+            line-height: 20px;
+            width: 326px;
+        }
     }
 
     &__buttons {
@@ -845,30 +1013,54 @@ body {
         justify-content: start;
         align-items: center;
         gap: 12px;
+        @media (max-width: 479.98px) {
+            // width: 250px;
+            // justify-content: space-between;
+            position: relative;
+            top: 50px;
+        }
     }
 
     &__nextbtn {
-        position: absolute;
-        left: 45%;
-        top: 95%;
+        margin-top: 150px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     &__prev {
+        @media (max-width: 479.98px) {
+            position: absolute;
+            left: 10%;
+        }
     }
 
     &__btnimg {
     }
 
     &__next {
+        @media (max-width: 479.98px) {
+            position: absolute;
+            right: 10%;
+        }
     }
 
     &__images {
     }
 
     &__image {
+        @media (max-width: 479.98px) {
+            width: 176px;
+            height: 308px;
+        }
     }
 
     &__img {
+        @media (max-width: 479.98px) {
+            min-width: 100%;
+            max-width: 100%;
+        }
     }
 }
 .install {
@@ -889,6 +1081,9 @@ body {
     &__title {
         width: 480px;
         text-align: center;
+        @media (max-width: 479.98px) {
+            width: 327px;
+        }
     }
 
     &__links {
@@ -903,4 +1098,25 @@ body {
 
     &__images {
     }
+}
+
+
+// FullPage.js
+.fp-tooltip {
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 10px;
+    line-height: 12px;
+    font-stretch: 151;
+    font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+}
+#fp-nav ul li .fp-tooltip {
+    color: #5337FF;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #6A6A6A;
+}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    background: #5337FF;
 }

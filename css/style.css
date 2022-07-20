@@ -117,6 +117,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 767.98px) {
+  .header__container {
+    justify-content: center;
+  }
+}
 .header__logo {
   display: flex;
   align-items: center;
@@ -126,6 +131,11 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+@media (max-width: 767.98px) {
+  .header__links {
+    display: none;
+  }
 }
 .header__link {
   display: flex;
@@ -262,13 +272,27 @@ body {
 }
 
 .about {
-  background: url("./../img/about-block/background.png") no-repeat 50% top;
+  background: url("./../img/about-block/background.png") no-repeat 80% top;
   background-size: contain;
+}
+@media (max-width: 479.98px) {
+  .about {
+    background-size: 55%;
+    background-position: left;
+  }
 }
 .about__container {
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+@media (max-width: 479.98px) {
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
 }
 .about__text {
   display: flex;
@@ -276,9 +300,22 @@ body {
   align-items: start;
   padding-top: 142px;
 }
+@media (max-width: 479.98px) {
+  .about__text {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .about__title {
   max-width: 541px;
   max-height: 132px;
+}
+@media (max-width: 479.98px) {
+  .about__title {
+    width: 327px;
+    text-align: center;
+  }
 }
 .about__links {
   display: flex;
@@ -286,25 +323,57 @@ body {
   gap: 24px;
   margin-top: 61px;
 }
+@media (max-width: 479.98px) {
+  .about__links {
+    margin: 0;
+    position: absolute;
+    top: 75%;
+  }
+}
+@media (max-width: 479.98px) {
+  .about__phoneimg {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    height: 313px;
+    padding-right: 60px;
+  }
+}
 .about__image {
-  margin-left: 227px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .about__nextbtn {
   position: relative;
-  left: 45%;
   top: 17%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
   font-family: "Roboto Flex";
   font-style: normal;
   font-weight: 750;
-  font-size: 40px;
+  font-size: calc(16px + 24 * ((100vw - 320px) / 838));
   line-height: 44px;
   letter-spacing: -0.5px;
   color: #090909;
   font-stretch: 151;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+@media (max-width: 479.98px) {
+  .title {
+    font-family: "Roboto Flex";
+    font-style: normal;
+    font-weight: 750;
+    line-height: 20px;
+    text-align: center;
+    color: #090909;
+    font-stretch: 151;
+    font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+  }
 }
 
 .btnnext {
@@ -320,25 +389,43 @@ body {
 }
 
 .arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  margin-right: 8px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("./../img/arrow.svg") no-repeat center center;
+  padding-right: 5px;
 }
 
+@media (max-width: 479.98px) {
+  .how-work__title {
+    text-align: left;
+  }
+}
 .how-work__cards {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
   margin-top: 48px;
+}
+@media (max-width: 479.98px) {
+  .how-work__cards {
+    width: 345px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .how-work__cards::-webkit-scrollbar {
+    display: none;
+  }
 }
 .how-work__nextbtn {
   position: relative;
-  left: 45%;
   top: 17%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-how {
@@ -401,6 +488,17 @@ body {
   height: 100%;
 }
 
+@media (max-width: 479.98px) {
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    gap: 1px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+}
 .card-house {
   width: 456px;
   height: 288px;
@@ -412,6 +510,12 @@ body {
   justify-content: space-between;
   background: url("./../img/how-block/house.png") no-repeat center bottom;
   background-color: #090909;
+}
+@media (max-width: 479.98px) {
+  .card-house {
+    width: 270px;
+    height: 196px;
+  }
 }
 .card-house_small {
   width: 312px;
@@ -472,6 +576,14 @@ body {
   background-color: #FFFFFF;
 }
 
+@media (max-width: 479.98px) {
+  .trand__container {
+    padding-right: 65px;
+  }
+}
+.trand__title {
+  text-align: left;
+}
 .trand__housecards {
   margin-top: 56px;
   display: flex;
@@ -503,8 +615,11 @@ body {
 }
 .trand__nextbtn {
   position: relative;
-  left: 45%;
   top: 17%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .rating__cards {
@@ -514,10 +629,21 @@ body {
   align-items: center;
   gap: 25px;
 }
+@media (max-width: 479.98px) {
+  .rating__cards {
+    gap: 5px;
+  }
+}
+.rating__card:nth-child(n+2) {
+  display: none;
+}
 .rating__nextbtn {
   position: relative;
-  left: 45%;
-  top: 21%;
+  top: 22%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-rating {
@@ -599,36 +725,61 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 479.98px) {
+  .genius__card {
+    background-size: 75%;
+    width: 299px;
+    height: 168px;
+  }
+}
 .genius__card-title {
   font-family: "Roboto Flex";
   font-style: normal;
   font-weight: 750;
-  font-size: 24px;
+  font-size: calc(14px + 10 * ((100vw - 320px) / 838));
   line-height: 28px;
   letter-spacing: -0.5px;
   color: #FFFFFF;
   font-stretch: 151;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
+@media (max-width: 479.98px) {
+  .genius__card-title {
+    line-height: 20px;
+  }
+}
 .genius__description {
   width: 277px;
   font-family: "Roboto Flex";
   font-style: normal;
   font-weight: 750;
-  font-size: 32px;
+  font-size: calc(16px + 16 * ((100vw - 320px) / 838));
   line-height: 36px;
   letter-spacing: -0.5px;
   color: #FFFFFF;
   font-stretch: 151;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
+@media (max-width: 479.98px) {
+  .genius__description {
+    line-height: 20px;
+  }
+}
 .genius__title {
   margin-top: 56px;
 }
+@media (max-width: 479.98px) {
+  .genius__title {
+    text-align: left;
+  }
+}
 .genius__nextbtn {
   position: relative;
-  left: 45%;
   top: 21%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .club__badge {
@@ -651,6 +802,11 @@ body {
 .club__title {
   margin-top: 24px;
 }
+@media (max-width: 479.98px) {
+  .club__title {
+    text-align: left;
+  }
+}
 .club__card {
   margin-top: 84px;
   margin-left: auto;
@@ -663,10 +819,23 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 479.98px) {
+  .club__card {
+    margin-top: 45px;
+    width: 299px;
+    height: 200px;
+    margin-left: 0;
+  }
+}
 .club__card-lines {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+@media (max-width: 479.98px) {
+  .club__card-lines {
+    gap: 5px;
+  }
 }
 .club__card-line {
   display: flex;
@@ -677,21 +846,31 @@ body {
   font-family: "Roboto Flex";
   font-style: normal;
   font-weight: 550;
-  font-size: 20px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 838));
   line-height: 28px;
   color: rgba(255, 255, 255, 0.8);
   font-stretch: 151;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
+@media (max-width: 479.98px) {
+  .club__name {
+    line-height: 20px;
+  }
+}
 .club__number {
   font-family: "Roboto Flex";
   font-style: normal;
   font-weight: 550;
-  font-size: 20px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 838));
   line-height: 28px;
   color: #FFB6B6;
   font-stretch: 151;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+@media (max-width: 479.98px) {
+  .club__number {
+    line-height: 20px;
+  }
 }
 .club__card-result {
   display: flex;
@@ -702,32 +881,52 @@ body {
   font-family: "Roboto Flex";
   font-style: normal;
   font-weight: 750;
-  font-size: 20px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 838));
   line-height: 28px;
   color: #FFFFFF;
   font-stretch: 151;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
+@media (max-width: 479.98px) {
+  .club__result-name {
+    line-height: 20px;
+  }
+}
 .club__result-number {
   font-family: "Roboto Flex";
   font-style: normal;
   font-weight: 750;
-  font-size: 20px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 838));
   line-height: 28px;
   color: #4FEA90;
   font-stretch: 151;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
+@media (max-width: 479.98px) {
+  .club__result-number {
+    line-height: 20px;
+  }
+}
 .club__nextbtn {
   position: relative;
-  left: 45%;
   top: 17%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .build__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 479.98px) {
+  .build__body {
+    flex-direction: column-reverse;
+    gap: 55px;
+    margin-top: 60px;
+  }
 }
 .build__about {
   display: flex;
@@ -745,24 +944,35 @@ body {
   font-family: "Roboto Flex";
   font-style: normal;
   font-weight: 750;
-  font-size: 32px;
+  font-size: calc(16px + 16 * ((100vw - 320px) / 838));
   line-height: 36px;
   letter-spacing: -0.5px;
   color: #090909;
   font-stretch: 151;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
+@media (max-width: 479.98px) {
+  .build__title {
+    line-height: 20px;
+  }
+}
 .build__description {
   width: 456px;
   font-family: "Roboto Flex";
   font-style: normal;
   font-weight: 750;
-  font-size: 32px;
+  font-size: calc(16px + 16 * ((100vw - 320px) / 838));
   line-height: 36px;
   letter-spacing: -0.5px;
   color: #6A6A6A;
   font-stretch: 151;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+@media (max-width: 479.98px) {
+  .build__description {
+    line-height: 20px;
+    width: 326px;
+  }
 }
 .build__buttons {
   position: absolute;
@@ -772,11 +982,44 @@ body {
   align-items: center;
   gap: 12px;
 }
-.build__nextbtn {
-  position: absolute;
-  left: 45%;
-  top: 95%;
+@media (max-width: 479.98px) {
+  .build__buttons {
+    position: relative;
+    top: 50px;
+  }
 }
+.build__nextbtn {
+  margin-top: 150px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 479.98px) {
+  .build__prev {
+    position: absolute;
+    left: 10%;
+  }
+}
+@media (max-width: 479.98px) {
+  .build__next {
+    position: absolute;
+    right: 10%;
+  }
+}
+@media (max-width: 479.98px) {
+  .build__image {
+    width: 176px;
+    height: 308px;
+  }
+}
+@media (max-width: 479.98px) {
+  .build__img {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
 .install__container {
   display: flex;
   justify-content: center;
@@ -792,9 +1035,35 @@ body {
   width: 480px;
   text-align: center;
 }
+@media (max-width: 479.98px) {
+  .install__title {
+    width: 327px;
+  }
+}
 .install__links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.fp-tooltip {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 10px;
+  line-height: 12px;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+
+#fp-nav ul li .fp-tooltip {
+  color: #5337FF;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #6A6A6A;
+}
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+  background: #5337FF;
 }
